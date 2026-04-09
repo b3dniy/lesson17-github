@@ -1,0 +1,6 @@
+---
+- name: Ensure demo file exists
+  ansible.builtin.file:
+    path: /tmp/otus-demo.txt
+    state: touch
+    mode: "0644"
